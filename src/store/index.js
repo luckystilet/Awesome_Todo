@@ -63,6 +63,11 @@ const store = new Vuex.Store({
         isComplete: false
       })
       s.currentId++
+    },
+    changeTodoText(s, p){
+      const requiredTodo = this.getters.getTodoById(p.id)
+      requiredTodo.text = p.text
+      console.log("s == ",  s)
     }
   },
   actions: {
