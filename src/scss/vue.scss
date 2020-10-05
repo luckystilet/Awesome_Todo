@@ -1,0 +1,18 @@
+.fade-page{
+  &-enter-active{
+    transition: opacity 1.3s, transform .5s;
+  }
+  &-enter{
+    opacity: 0;
+    transform: translate(-10px);
+  }
+}
+// =================== tab-fade >===================
+.fade-tab{
+  &-enter-active, &-leave-active{
+    transition: opactity .2s;
+  }
+  &-enter, &-leave-to{
+    opacity: 0;
+  }
+}
